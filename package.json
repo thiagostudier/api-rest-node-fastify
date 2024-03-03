@@ -1,0 +1,44 @@
+{
+  "name": "api-rest-node-fastify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx src/server.ts",
+    "lint": "eslint src --ext .ts --fix",
+    "test": "vitest",
+    "knex": "node --no-warnings --loader ts-node/esm --conditions ts-node/esm ./node_modules/knex/bin/cli.js",
+    "build": "tsup src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagostudier/api-rest-node-fastify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagostudier/api-rest-node-fastify/issues"
+  },
+  "homepage": "https://github.com/thiagostudier/api-rest-node-fastify#readme",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@types/node": "^20.11.20",
+    "@types/supertest": "^2.0.12",
+    "eslint": "^8.57.0",
+    "supertest": "^6.3.4",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3",
+    "vitest": "^0.30.1"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^8.3.0",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.26.1",
+    "knex": "^3.1.0",
+    "sqlite3": "^5.1.7",
+    "zod": "^3.22.4"
+  }
+}
