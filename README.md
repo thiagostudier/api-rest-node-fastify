@@ -1,45 +1,92 @@
-- instalar typescript
-  npm i -D typescript
+# Node API Rest com Fastify
 
-- cria o tsconfig.json
-  npx tsc --init
+Este é um projeto de exemplo para criar uma API RESTful em Node.js utilizando o framework Fastify. Abaixo estão os comandos e passos utilizados durante o desenvolvimento do projeto.
 
-npx tsc src/index.ts
+## Comandos Utilizados:
 
-- instalar fastify
-  npm i fastify
+1. **Instalar TypeScript:**
+    ```bash
+    npm i -D typescript
+    ```
 
-- instalar pacote para resolver conflitos
-  npm install -D @types/node
+2. **Criar o `tsconfig.json`:**
+    ```bash
+    npx tsc --init
+    ```
 
-- converte o código para js de forma automatizada
-  npm install tsx -D
+3. **Converter o código TypeScript para JavaScript:**
+    ```bash
+    npx tsc src/index.ts
+    ```
 
-- instalar o eslint
-  npm i eslint @rocketseat/eslint-config -D
+4. **Instalar Fastify:**
+    ```bash
+    npm i fastify
+    ```
 
-- adicionar knex
-  npm install knex --save
+5. **Instalar pacote para resolver conflitos:**
+    ```bash
+    npm install -D @types/node
+    ```
 
-- adicionar o drive do banco de dados
-  npm install knex sqlite3
+6. **Instalar ferramenta para conversão de código TypeScript para JavaScript de forma automatizada:**
+    ```bash
+    npm install tsx -D
+    ```
 
-- criar tabela
-  npm run knex -- migrate:make name-migrate
-  npm run knex -- migrate:rollback
+7. **Instalar ESLint:**
+    ```bash
+    npm i eslint @rocketseat/eslint-config -D
+    ```
 
-- executar migrations
-  npm run knex -- migrate:latest
+8. **Adicionar Knex:**
+    ```bash
+    npm install knex --save
+    ```
 
-- lib zod - env
-  npm i zod
+9. **Adicionar o driver do banco de dados:**
+    ```bash
+    npm install knex sqlite3
+    ```
 
-- instalar para lidar com os cookies no fastify
-  npm i @fastify/cookie
+10. **Criar tabela utilizando Knex:**
+    ```bash
+    npm run knex -- migrate:make name-migrate
+    ```
 
-- instalar vitest - ferramente da testes
-  npm i vitest -D
-  npm i supertest -D
+11. **Executar rollback nas migrations:**
+    ```bash
+    npm run knex -- migrate:rollback
+    ```
 
-- ferramenta para deploy
-  npm i tsup -D
+12. **Executar as migrations:**
+    ```bash
+    npm run knex -- migrate:latest
+    ```
+
+13. **Instalar a biblioteca Zod para validação de dados:**
+    ```bash
+    npm i zod
+    ```
+
+14. **Instalar pacote para lidar com cookies no Fastify:**
+    ```bash
+    npm i @fastify/cookie
+    ```
+
+15. **Instalar Vitest - Ferramenta de testes e Supertest:**
+    ```bash
+    npm i vitest -D
+    npm i supertest -D
+    ```
+
+16. **Instalar ferramenta para deploy:**
+    ```bash
+    npm i tsup -D
+    ```
+
+## Observações:
+
+- Lembre-se de ajustar as configurações do seu ambiente conforme necessário.
+- Utilize os comandos acima como referência e adapte-os conforme a estrutura e as necessidades do seu projeto.
+- Este README fornece uma visão geral dos comandos utilizados, mas detalhes adicionais podem ser necessários dependendo do contexto do projeto.
